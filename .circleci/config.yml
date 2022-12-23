@@ -27,7 +27,7 @@ jobs:
       - image: circleci/node13.8.0
     steps:
       - checkout
-      - restore_cache
+      - restore_cache:
           keys:
             - "npm-packages"
       - run: npm audit
